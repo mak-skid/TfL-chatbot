@@ -1,0 +1,648 @@
+{
+  "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.DisambiguationResult, Tfl.Api.Presentation.Entities",
+  "toLocationDisambiguation": {
+    "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Disambiguation, Tfl.Api.Presentation.Entities",
+    "disambiguationOptions": [
+      {
+        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.DisambiguationOption, Tfl.Api.Presentation.Entities",
+        "parameterValue": "1000013",
+        "uri": "/journey/journeyresults/westminster/to/1000013",
+        "place": {
+          "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+          "naptanId": "HUBBAN",
+          "modes": ["dlr", "tube"],
+          "icsCode": "1000013",
+          "stopType": "stop",
+          "url": "/StopPoint/HUBBAN",
+          "commonName": "City of London, Bank",
+          "placeType": "StopPoint",
+          "additionalProperties": [],
+          "lat": 51.51338903687,
+          "lon": -0.08882541458
+        },
+        "matchQuality": 1000
+      },
+      {
+        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.DisambiguationOption, Tfl.Api.Presentation.Entities",
+        "parameterValue": "51.50813244668,-0.0951554522",
+        "uri": "/journey/journeyresults/westminster/to/51.50813244668,-0.0951554522",
+        "place": {
+          "$type": "Tfl.Api.Presentation.Entities.Place, Tfl.Api.Presentation.Entities",
+          "url": "/Place/",
+          "commonName": "Southwark, Bankside",
+          "placeType": "StopPoint",
+          "additionalProperties": [],
+          "lat": 51.50813244668,
+          "lon": -0.0951554522
+        },
+        "matchQuality": 964
+      },
+      {
+        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.DisambiguationOption, Tfl.Api.Presentation.Entities",
+        "parameterValue": "51.66151925298,-0.09419500942",
+        "uri": "/journey/journeyresults/westminster/to/51.66151925298,-0.09419500942",
+        "place": {
+          "$type": "Tfl.Api.Presentation.Entities.Place, Tfl.Api.Presentation.Entities",
+          "url": "/Place/",
+          "commonName": "Enfield (London), Bankside",
+          "placeType": "StopPoint",
+          "additionalProperties": [],
+          "lat": 51.66151925298,
+          "lon": -0.09419500942
+        },
+        "matchQuality": 964
+      },
+      {
+        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.DisambiguationOption, Tfl.Api.Presentation.Entities",
+        "parameterValue": "51.51205609458,-0.3906865576",
+        "uri": "/journey/journeyresults/westminster/to/51.51205609458,-0.3906865576",
+        "place": {
+          "$type": "Tfl.Api.Presentation.Entities.Place, Tfl.Api.Presentation.Entities",
+          "url": "/Place/",
+          "commonName": "Ealing, Bankside",
+          "placeType": "StopPoint",
+          "additionalProperties": [],
+          "lat": 51.512056094580004,
+          "lon": -0.3906865576
+        },
+        "matchQuality": 964
+      },
+      {
+        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.DisambiguationOption, Tfl.Api.Presentation.Entities",
+        "parameterValue": "51.3556075384,-0.08136709018",
+        "uri": "/journey/journeyresults/westminster/to/51.3556075384,-0.08136709018",
+        "place": {
+          "$type": "Tfl.Api.Presentation.Entities.Place, Tfl.Api.Presentation.Entities",
+          "url": "/Place/",
+          "commonName": "Croydon (London), Bankside",
+          "placeType": "StopPoint",
+          "additionalProperties": [],
+          "lat": 51.3556075384,
+          "lon": -0.08136709018
+        },
+        "matchQuality": 964
+      },
+      {
+        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.DisambiguationOption, Tfl.Api.Presentation.Entities",
+        "parameterValue": "51.48496086423,-0.37882218713",
+        "uri": "/journey/journeyresults/westminster/to/51.48496086423,-0.37882218713",
+        "place": {
+          "$type": "Tfl.Api.Presentation.Entities.Place, Tfl.Api.Presentation.Entities",
+          "url": "/Place/",
+          "commonName": "Hounslow, Banksyard",
+          "placeType": "StopPoint",
+          "additionalProperties": [],
+          "lat": 51.48496086423,
+          "lon": -0.37882218713
+        },
+        "matchQuality": 959
+      },
+      {
+        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.DisambiguationOption, Tfl.Api.Presentation.Entities",
+        "parameterValue": "51.56990650607,-0.14368541289",
+        "uri": "/journey/journeyresults/westminster/to/51.56990650607,-0.14368541289",
+        "place": {
+          "$type": "Tfl.Api.Presentation.Entities.Place, Tfl.Api.Presentation.Entities",
+          "url": "/Place/",
+          "commonName": "Harringay, The Bank",
+          "placeType": "StopPoint",
+          "additionalProperties": [],
+          "lat": 51.569906506070005,
+          "lon": -0.14368541289
+        },
+        "matchQuality": 954
+      },
+      {
+        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.DisambiguationOption, Tfl.Api.Presentation.Entities",
+        "parameterValue": "51.50721151729,-0.09271530424",
+        "uri": "/journey/journeyresults/westminster/to/51.50721151729,-0.09271530424",
+        "place": {
+          "$type": "Tfl.Api.Presentation.Entities.Place, Tfl.Api.Presentation.Entities",
+          "url": "/Place/",
+          "commonName": "Southwark, Bank End",
+          "placeType": "StopPoint",
+          "additionalProperties": [],
+          "lat": 51.50721151729,
+          "lon": -0.09271530424
+        },
+        "matchQuality": 954
+      },
+      {
+        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.DisambiguationOption, Tfl.Api.Presentation.Entities",
+        "parameterValue": "51.35585131769,-0.01451278576",
+        "uri": "/journey/journeyresults/westminster/to/51.35585131769,-0.01451278576",
+        "place": {
+          "$type": "Tfl.Api.Presentation.Entities.Place, Tfl.Api.Presentation.Entities",
+          "url": "/Place/",
+          "commonName": "Croydon (London), Oak Bank",
+          "placeType": "StopPoint",
+          "additionalProperties": [],
+          "lat": 51.35585131769,
+          "lon": -0.01451278576
+        },
+        "matchQuality": 954
+      },
+      {
+        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.DisambiguationOption, Tfl.Api.Presentation.Entities",
+        "parameterValue": "51.57341050996,-0.07704403218",
+        "uri": "/journey/journeyresults/westminster/to/51.57341050996,-0.07704403218",
+        "place": {
+          "$type": "Tfl.Api.Presentation.Entities.Place, Tfl.Api.Presentation.Entities",
+          "url": "/Place/",
+          "commonName": "Hackney (London), East Bank",
+          "placeType": "StopPoint",
+          "additionalProperties": [],
+          "lat": 51.573410509960006,
+          "lon": -0.07704403218
+        },
+        "matchQuality": 950
+      },
+      {
+        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.DisambiguationOption, Tfl.Api.Presentation.Entities",
+        "parameterValue": "51.57421596058,-0.07735639268",
+        "uri": "/journey/journeyresults/westminster/to/51.57421596058,-0.07735639268",
+        "place": {
+          "$type": "Tfl.Api.Presentation.Entities.Place, Tfl.Api.Presentation.Entities",
+          "url": "/Place/",
+          "commonName": "Hackney (London), West Bank",
+          "placeType": "StopPoint",
+          "additionalProperties": [],
+          "lat": 51.57421596058,
+          "lon": -0.077356392680000011
+        },
+        "matchQuality": 950
+      },
+      {
+        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.DisambiguationOption, Tfl.Api.Presentation.Entities",
+        "parameterValue": "51.36073074403,-0.19142612497",
+        "uri": "/journey/journeyresults/westminster/to/51.36073074403,-0.19142612497",
+        "place": {
+          "$type": "Tfl.Api.Presentation.Entities.Place, Tfl.Api.Presentation.Entities",
+          "url": "/Place/",
+          "commonName": "Sutton (London), Bank Mews",
+          "placeType": "StopPoint",
+          "additionalProperties": [],
+          "lat": 51.36073074403,
+          "lon": -0.19142612497
+        },
+        "matchQuality": 950
+      },
+      {
+        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.DisambiguationOption, Tfl.Api.Presentation.Entities",
+        "parameterValue": "51.55214027933,0.06543926291",
+        "uri": "/journey/journeyresults/westminster/to/51.55214027933,0.06543926291",
+        "place": {
+          "$type": "Tfl.Api.Presentation.Entities.Place, Tfl.Api.Presentation.Entities",
+          "url": "/Place/",
+          "commonName": "West Ham (London), Banks Way",
+          "placeType": "StopPoint",
+          "additionalProperties": [],
+          "lat": 51.55214027933,
+          "lon": 0.06543926291
+        },
+        "matchQuality": 950
+      },
+      {
+        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.DisambiguationOption, Tfl.Api.Presentation.Entities",
+        "parameterValue": "51.41996335936,-0.30315636594",
+        "uri": "/journey/journeyresults/westminster/to/51.41996335936,-0.30315636594",
+        "place": {
+          "$type": "Tfl.Api.Presentation.Entities.Place, Tfl.Api.Presentation.Entities",
+          "url": "/Place/",
+          "commonName": "Kingston Upon Thames (London), Bank Lane",
+          "placeType": "StopPoint",
+          "additionalProperties": [],
+          "lat": 51.419963359360004,
+          "lon": -0.30315636594
+        },
+        "matchQuality": 950
+      },
+      {
+        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.DisambiguationOption, Tfl.Api.Presentation.Entities",
+        "parameterValue": "51.458319361,-0.2555856661",
+        "uri": "/journey/journeyresults/westminster/to/51.458319361,-0.2555856661",
+        "place": {
+          "$type": "Tfl.Api.Presentation.Entities.Place, Tfl.Api.Presentation.Entities",
+          "url": "/Place/",
+          "commonName": "Wandsworth, Bank Lane",
+          "placeType": "StopPoint",
+          "additionalProperties": [],
+          "lat": 51.458319361,
+          "lon": -0.2555856661
+        },
+        "matchQuality": 950
+      },
+      {
+        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.DisambiguationOption, Tfl.Api.Presentation.Entities",
+        "parameterValue": "51.65675601939,-0.09104067614",
+        "uri": "/journey/journeyresults/westminster/to/51.65675601939,-0.09104067614",
+        "place": {
+          "$type": "Tfl.Api.Presentation.Entities.Place, Tfl.Api.Presentation.Entities",
+          "url": "/Place/",
+          "commonName": "Enfield (London), West Bank",
+          "placeType": "StopPoint",
+          "additionalProperties": [],
+          "lat": 51.65675601939,
+          "lon": -0.09104067614
+        },
+        "matchQuality": 950
+      },
+      {
+        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.DisambiguationOption, Tfl.Api.Presentation.Entities",
+        "parameterValue": "51.53394160858,0.0724303911",
+        "uri": "/journey/journeyresults/westminster/to/51.53394160858,0.0724303911",
+        "place": {
+          "$type": "Tfl.Api.Presentation.Entities.Place, Tfl.Api.Presentation.Entities",
+          "url": "/Place/",
+          "commonName": "Barking, West Bank",
+          "placeType": "StopPoint",
+          "additionalProperties": [],
+          "lat": 51.53394160858,
+          "lon": 0.072430391099999991
+        },
+        "matchQuality": 950
+      },
+      {
+        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.DisambiguationOption, Tfl.Api.Presentation.Entities",
+        "parameterValue": "51.61025953987,-0.27726608453",
+        "uri": "/journey/journeyresults/westminster/to/51.61025953987,-0.27726608453",
+        "place": {
+          "$type": "Tfl.Api.Presentation.Entities.Place, Tfl.Api.Presentation.Entities",
+          "url": "/Place/",
+          "commonName": "Barnet, Horn Bank",
+          "placeType": "StopPoint",
+          "additionalProperties": [],
+          "lat": 51.61025953987,
+          "lon": -0.27726608453
+        },
+        "matchQuality": 950
+      },
+      {
+        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.DisambiguationOption, Tfl.Api.Presentation.Entities",
+        "parameterValue": "60009506",
+        "uri": "/journey/journeyresults/westminster/to/60009506",
+        "place": {
+          "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+          "modes": ["bus"],
+          "icsCode": "60009506",
+          "stopType": "stop",
+          "url": "/StopPoint/",
+          "commonName": "London, Banks Road",
+          "placeType": "StopPoint",
+          "additionalProperties": [],
+          "lat": 51.662442547530006,
+          "lon": -0.26149362122
+        },
+        "matchQuality": 947
+      }
+    ],
+    "matchStatus": "list"
+  },
+  "fromLocationDisambiguation": {
+    "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Disambiguation, Tfl.Api.Presentation.Entities",
+    "disambiguationOptions": [
+      {
+        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.DisambiguationOption, Tfl.Api.Presentation.Entities",
+        "parameterValue": "1002085",
+        "uri": "/journey/journeyresults/1002085/to/bank",
+        "place": {
+          "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+          "naptanId": "930GWMR",
+          "modes": ["river-bus"],
+          "icsCode": "1002085",
+          "stopType": "stop",
+          "url": "/StopPoint/930GWMR",
+          "commonName": "Westminster (London), Westminster Pier",
+          "placeType": "StopPoint",
+          "additionalProperties": [],
+          "lat": 51.501593349370005,
+          "lon": -0.12351013545
+        },
+        "matchQuality": 967
+      },
+      {
+        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.DisambiguationOption, Tfl.Api.Presentation.Entities",
+        "parameterValue": "51.63065815579,-0.05313769015",
+        "uri": "/journey/journeyresults/51.63065815579,-0.05313769015/to/bank",
+        "place": {
+          "$type": "Tfl.Api.Presentation.Entities.Place, Tfl.Api.Presentation.Entities",
+          "url": "/Place/",
+          "commonName": "Enfield (London), Westminster Road",
+          "placeType": "StopPoint",
+          "additionalProperties": [],
+          "lat": 51.63065815579,
+          "lon": -0.05313769015
+        },
+        "matchQuality": 967
+      },
+      {
+        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.DisambiguationOption, Tfl.Api.Presentation.Entities",
+        "parameterValue": "51.50722746983,-0.33909686474",
+        "uri": "/journey/journeyresults/51.50722746983,-0.33909686474/to/bank",
+        "place": {
+          "$type": "Tfl.Api.Presentation.Entities.Place, Tfl.Api.Presentation.Entities",
+          "url": "/Place/",
+          "commonName": "Ealing, Westminster Road",
+          "placeType": "StopPoint",
+          "additionalProperties": [],
+          "lat": 51.50722746983,
+          "lon": -0.33909686474
+        },
+        "matchQuality": 967
+      },
+      {
+        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.DisambiguationOption, Tfl.Api.Presentation.Entities",
+        "parameterValue": "51.3769564194,-0.18115941848",
+        "uri": "/journey/journeyresults/51.3769564194,-0.18115941848/to/bank",
+        "place": {
+          "$type": "Tfl.Api.Presentation.Entities.Place, Tfl.Api.Presentation.Entities",
+          "url": "/Place/",
+          "commonName": "Sutton (London), Westminster Road",
+          "placeType": "StopPoint",
+          "additionalProperties": [],
+          "lat": 51.3769564194,
+          "lon": -0.18115941848
+        },
+        "matchQuality": 967
+      },
+      {
+        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.DisambiguationOption, Tfl.Api.Presentation.Entities",
+        "parameterValue": "1014495",
+        "uri": "/journey/journeyresults/1014495/to/bank",
+        "place": {
+          "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+          "naptanId": "490G000828",
+          "modes": ["bus"],
+          "icsCode": "1014495",
+          "stopType": "stop",
+          "url": "/StopPoint/490G000828",
+          "commonName": "Westminster (London), Westminster Abbey",
+          "placeType": "StopPoint",
+          "additionalProperties": [],
+          "lat": 51.499039281680005,
+          "lon": -0.13081882967
+        },
+        "matchQuality": 964
+      },
+      {
+        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.DisambiguationOption, Tfl.Api.Presentation.Entities",
+        "parameterValue": "1019109",
+        "uri": "/journey/journeyresults/1019109/to/bank",
+        "place": {
+          "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+          "naptanId": "490G00019109",
+          "modes": ["bus"],
+          "icsCode": "1019109",
+          "stopType": "stop",
+          "url": "/StopPoint/490G00019109",
+          "commonName": "Palmers Green, Westminster Drive",
+          "placeType": "StopPoint",
+          "additionalProperties": [],
+          "lat": 51.61354636447,
+          "lon": -0.12106305319999999
+        },
+        "matchQuality": 964
+      },
+      {
+        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.DisambiguationOption, Tfl.Api.Presentation.Entities",
+        "parameterValue": "51.49947837501,-0.12846681566",
+        "uri": "/journey/journeyresults/51.49947837501,-0.12846681566/to/bank",
+        "place": {
+          "$type": "Tfl.Api.Presentation.Entities.Place, Tfl.Api.Presentation.Entities",
+          "url": "/Place/",
+          "commonName": "City of Westminster, Westminster Abbey",
+          "placeType": "PointOfInterest",
+          "additionalProperties": [],
+          "lat": 51.49947837501,
+          "lon": -0.12846681565999998
+        },
+        "matchQuality": 964
+      },
+      {
+        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.DisambiguationOption, Tfl.Api.Presentation.Entities",
+        "parameterValue": "51.42989243158,-0.33081145666",
+        "uri": "/journey/journeyresults/51.42989243158,-0.33081145666/to/bank",
+        "place": {
+          "$type": "Tfl.Api.Presentation.Entities.Place, Tfl.Api.Presentation.Entities",
+          "url": "/Place/",
+          "commonName": "Richmond (London), Westminster Close",
+          "placeType": "StopPoint",
+          "additionalProperties": [],
+          "lat": 51.42989243158,
+          "lon": -0.33081145666
+        },
+        "matchQuality": 964
+      },
+      {
+        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.DisambiguationOption, Tfl.Api.Presentation.Entities",
+        "parameterValue": "51.44856136478,-0.41775907562",
+        "uri": "/journey/journeyresults/51.44856136478,-0.41775907562/to/bank",
+        "place": {
+          "$type": "Tfl.Api.Presentation.Entities.Place, Tfl.Api.Presentation.Entities",
+          "url": "/Place/",
+          "commonName": "Hounslow, Westminster Close",
+          "placeType": "StopPoint",
+          "additionalProperties": [],
+          "lat": 51.44856136478,
+          "lon": -0.41775907562000003
+        },
+        "matchQuality": 964
+      },
+      {
+        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.DisambiguationOption, Tfl.Api.Presentation.Entities",
+        "parameterValue": "51.61363174964,-0.11909516083",
+        "uri": "/journey/journeyresults/51.61363174964,-0.11909516083/to/bank",
+        "place": {
+          "$type": "Tfl.Api.Presentation.Entities.Place, Tfl.Api.Presentation.Entities",
+          "url": "/Place/",
+          "commonName": "Enfield (London), Westminster Drive",
+          "placeType": "StopPoint",
+          "additionalProperties": [],
+          "lat": 51.61363174964,
+          "lon": -0.11909516082999999
+        },
+        "matchQuality": 964
+      },
+      {
+        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.DisambiguationOption, Tfl.Api.Presentation.Entities",
+        "parameterValue": "51.50082347247,-0.12091947626",
+        "uri": "/journey/journeyresults/51.50082347247,-0.12091947626/to/bank",
+        "place": {
+          "$type": "Tfl.Api.Presentation.Entities.Place, Tfl.Api.Presentation.Entities",
+          "url": "/Place/",
+          "commonName": "Lambeth, Westminster Bridge",
+          "placeType": "StopPoint",
+          "additionalProperties": [],
+          "lat": 51.50082347247,
+          "lon": -0.12091947625999999
+        },
+        "matchQuality": 961
+      },
+      {
+        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.DisambiguationOption, Tfl.Api.Presentation.Entities",
+        "parameterValue": "51.40867901769,-0.10879621954",
+        "uri": "/journey/journeyresults/51.40867901769,-0.10879621954/to/bank",
+        "place": {
+          "$type": "Tfl.Api.Presentation.Entities.Place, Tfl.Api.Presentation.Entities",
+          "url": "/Place/",
+          "commonName": "Croydon (London), Westminster Avenue",
+          "placeType": "StopPoint",
+          "additionalProperties": [],
+          "lat": 51.408679017690005,
+          "lon": -0.10879621954
+        },
+        "matchQuality": 961
+      },
+      {
+        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.DisambiguationOption, Tfl.Api.Presentation.Entities",
+        "parameterValue": "1000266",
+        "uri": "/journey/journeyresults/1000266/to/bank",
+        "place": {
+          "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+          "naptanId": "HUBWSM",
+          "modes": ["tube"],
+          "icsCode": "1000266",
+          "stopType": "stop",
+          "url": "/StopPoint/HUBWSM",
+          "commonName": "Westminster (London), Westminster Station",
+          "placeType": "StopPoint",
+          "additionalProperties": [],
+          "lat": 51.501399779349995,
+          "lon": -0.12490128604
+        },
+        "matchQuality": 959
+      },
+      {
+        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.DisambiguationOption, Tfl.Api.Presentation.Entities",
+        "parameterValue": "51.59140000485,0.08337496636",
+        "uri": "/journey/journeyresults/51.59140000485,0.08337496636/to/bank",
+        "place": {
+          "$type": "Tfl.Api.Presentation.Entities.Place, Tfl.Api.Presentation.Entities",
+          "url": "/Place/",
+          "commonName": "Redbridge (London), Westminster Gardens",
+          "placeType": "StopPoint",
+          "additionalProperties": [],
+          "lat": 51.59140000485,
+          "lon": 0.083374966360000011
+        },
+        "matchQuality": 959
+      },
+      {
+        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.DisambiguationOption, Tfl.Api.Presentation.Entities",
+        "parameterValue": "51.62816556481,0.01307504437",
+        "uri": "/journey/journeyresults/51.62816556481,0.01307504437/to/bank",
+        "place": {
+          "$type": "Tfl.Api.Presentation.Entities.Place, Tfl.Api.Presentation.Entities",
+          "url": "/Place/",
+          "commonName": "Walthamstow, Westminster Gardens",
+          "placeType": "StopPoint",
+          "additionalProperties": [],
+          "lat": 51.62816556481,
+          "lon": 0.01307504437
+        },
+        "matchQuality": 959
+      },
+      {
+        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.DisambiguationOption, Tfl.Api.Presentation.Entities",
+        "parameterValue": "51.52792193433,0.08986120908",
+        "uri": "/journey/journeyresults/51.52792193433,0.08986120908/to/bank",
+        "place": {
+          "$type": "Tfl.Api.Presentation.Entities.Place, Tfl.Api.Presentation.Entities",
+          "url": "/Place/",
+          "commonName": "Barking, Westminster Gardens",
+          "placeType": "StopPoint",
+          "additionalProperties": [],
+          "lat": 51.52792193433,
+          "lon": 0.08986120908
+        },
+        "matchQuality": 959
+      },
+      {
+        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.DisambiguationOption, Tfl.Api.Presentation.Entities",
+        "parameterValue": "1014496",
+        "uri": "/journey/journeyresults/1014496/to/bank",
+        "place": {
+          "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+          "naptanId": "490G00014496",
+          "modes": ["bus"],
+          "icsCode": "1014496",
+          "stopType": "stop",
+          "url": "/StopPoint/490G00014496",
+          "commonName": "Westminster (London), Westminster Cathedral",
+          "placeType": "StopPoint",
+          "additionalProperties": [],
+          "lat": 51.496833924769994,
+          "lon": -0.14086419547999998
+        },
+        "matchQuality": 954
+      },
+      {
+        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.DisambiguationOption, Tfl.Api.Presentation.Entities",
+        "parameterValue": "1003384",
+        "uri": "/journey/journeyresults/1003384/to/bank",
+        "place": {
+          "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+          "naptanId": "490G000394",
+          "modes": ["bus"],
+          "icsCode": "1003384",
+          "stopType": "stop",
+          "url": "/StopPoint/490G000394",
+          "commonName": "Westminster (London), Westminster City Hall",
+          "placeType": "StopPoint",
+          "additionalProperties": [],
+          "lat": 51.49732156699,
+          "lon": -0.13702649476999998
+        },
+        "matchQuality": 950
+      },
+      {
+        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.DisambiguationOption, Tfl.Api.Presentation.Entities",
+        "parameterValue": "51.49999417928,-0.12472845256",
+        "uri": "/journey/journeyresults/51.49999417928,-0.12472845256/to/bank",
+        "place": {
+          "$type": "Tfl.Api.Presentation.Entities.Place, Tfl.Api.Presentation.Entities",
+          "url": "/Place/",
+          "commonName": "City of Westminster, Palace Of Westminster",
+          "placeType": "PointOfInterest",
+          "additionalProperties": [],
+          "lat": 51.499994179279994,
+          "lon": -0.12472845256000001
+        },
+        "matchQuality": 950
+      },
+      {
+        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.DisambiguationOption, Tfl.Api.Presentation.Entities",
+        "parameterValue": "51.49988334633,-0.12454570003",
+        "uri": "/journey/journeyresults/51.49988334633,-0.12454570003/to/bank",
+        "place": {
+          "$type": "Tfl.Api.Presentation.Entities.Place, Tfl.Api.Presentation.Entities",
+          "url": "/Place/",
+          "commonName": "City of Westminster, Palace of Westminster",
+          "placeType": "PointOfInterest",
+          "additionalProperties": [],
+          "lat": 51.49988334633,
+          "lon": -0.12454570003000001
+        },
+        "matchQuality": 950
+      }
+    ],
+    "matchStatus": "list"
+  },
+  "viaLocationDisambiguation": {
+    "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Disambiguation, Tfl.Api.Presentation.Entities",
+    "matchStatus": "empty"
+  },
+  "recommendedMaxAgeMinutes": 1440,
+  "searchCriteria": {
+    "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.SearchCriteria, Tfl.Api.Presentation.Entities",
+    "dateTime": "2023-11-09T21:00:00",
+    "dateTimeType": "Departing"
+  },
+  "journeyVector": {
+    "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.JourneyVector, Tfl.Api.Presentation.Entities",
+    "from": "westminster",
+    "to": "bank",
+    "via": "",
+    "uri": "/journey/journeyresults/westminster/to/bank"
+  }
+}
