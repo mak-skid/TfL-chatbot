@@ -28,7 +28,8 @@ while not stop:
 
         start = time.time()
         related_product_indices = similarity_calc(documents.values(), [query])    
-        print(answers["Q"+ str(related_product_indices[0])])
+        for i in range(len(related_product_indices)):
+            print(answers["Q"+ str(related_product_indices[i])])
         stop = True
 
 end = time.time()

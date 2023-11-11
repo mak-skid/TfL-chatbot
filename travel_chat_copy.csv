@@ -1,0 +1,126 @@
+context,response,text,label
+[''],"['Hello, this is London Tube journey planner AI. how can I help you?', 'Good to see you again', 'Hi, there! This is London Tube journey planner AI. how can I help?']",Hi, there!,greeting
+[''],"['Hello, this is London Tube journey planner AI. how can I help you?', 'Good to see you again', 'Hi, there! This is London Tube journey planner AI. how can I help?']",Hi, there!,greeting
+[''],"['Hello, this is London Tube journey planner AI. how can I help you?', 'Good to see you again', 'Hi, there! This is London Tube journey planner AI. how can I help?']",Hello?,greeting
+[''],"['Hello, this is London Tube journey planner AI. how can I help you?', 'Good to see you again', 'Hi, there! This is London Tube journey planner AI. how can I help?']",hi can you help me?,greeting
+[''],"['Hello, this is London Tube journey planner AI. how can I help you?', 'Good to see you again', 'Hi, there! This is London Tube journey planner AI. how can I help?']",hey again,greeting
+[''],"['Hello, this is London Tube journey planner AI. how can I help you?", 'Good to see you again', 'Hi, there! This is London Tube journey planner AI. how can I help?']",hey man,greeting
+[''],"['Hello, this is London Tube journey planner AI. how can I help you?', 'Good to see you again', 'Hi, there! This is London Tube journey planner AI. how can I help?']",hey there,greeting
+[''],"['Hello, this is London Tube journey planner AI. how can I help you?', 'Good to see you again', 'Hi, there! This is London Tube journey planner AI. how can I help?']",hello? anyone?,greeting
+[''],"['Hello, this is London Tube journey planner AI. how can I help you?', 'Good to see you again', 'Hi, there! This is London Tube journey planner AI. how can I help?']",hi again,greeting
+[''],"['Hello, this is London Tube journey planner AI. how can I help you?', 'Good to see you again', 'Hi, there! This is London Tube journey planner AI. how can I help?']",hello ,greeting
+[''],"['Hello, this is London Tube journey planner AI. how can I help you?', 'Good to see you again', 'Hi, there! This is London Tube journey planner AI. how can I help?']",hi hi,greeting
+[''],"['Hello, this is London Tube journey planner AI. how can I help you?', 'Good to see you again', 'Hi, there! This is London Tube journey planner AI. how can I help?']",How are you?,greeting
+[''],"['Hello, this is London Tube journey planner AI. how can I help you?', 'Good to see you again', 'Hi, there! This is London Tube journey planner AI. how can I help?']",Hello, are you there?,greeting
+[''],"['Hello, this is London Tube journey planner AI. how can I help you?', 'Good to see you again', 'Hi, there! This is London Tube journey planner AI. how can I help?']",hi there, can you help me?,greeting
+[''],"['Hello, this is London Tube journey planner AI. how can I help you?', 'Good to see you again', 'Hi, there! This is London Tube journey planner AI. how can I help?']",hello, good day,greeting
+[''],"['Hello, this is London Tube journey planner AI. how can I help you?', 'Good to see you again', 'Hi, there! This is London Tube journey planner AI. how can I help?']",Is anyone there?,greeting
+[''],"['Hello, this is London Tube journey planner AI. how can I help you?', 'Good to see you again', 'Hi, there! This is London Tube journey planner AI. how can I help?']",Hello,greeting
+[''],"['Hello, this is London Tube journey planner AI. how can I help you?', 'Good to see you again', 'Hi, there! This is London Tube journey planner AI. how can I help?']",hello,greeting
+[''],"['Hello, this is London Tube journey planner AI. how can I help you?', 'Good to see you again', 'Hi, there! This is London Tube journey planner AI. how can I help?']",Good day,greeting
+[''],"['Hello, this is London Tube journey planner AI. how can I help you?', 'Good to see you again', 'Hi, there! This is London Tube journey planner AI. how can I help?']",hi fam,greeting
+[''],"['Hello, this is London Tube journey planner AI. how can I help you?', 'Good to see you again', 'Hi, there! This is London Tube journey planner AI. how can I help?']",Hey,greeting
+[''],"['Hello, this is London Tube journey planner AI. how can I help you?', 'Good to see you again', 'Hi, there! This is London Tube journey planner AI. how can I help?']",Good morning,greeting
+[''],"['Hello, this is London Tube journey planner AI. how can I help you?', 'Good to see you again', 'Hi, there! This is London Tube journey planner AI. how can I help?']",Good afternoon,greeting
+[''],"['Hello, this is London Tube journey planner AI. how can I help you?', 'Good to see you again', 'Hi, there! This is London Tube journey planner AI. how can I help?']",good evening,greeting
+[''],"['Hello, this is London Tube journey planner AI. how can I help you?', 'Good to see you again', 'Hi, there! This is London Tube journey planner AI. how can I help?']",yo,greeting
+[''],"['Hello, this is London Tube journey planner AI. how can I help you?', 'Good to see you again', 'Hi, there! This is London Tube journey planner AI. how can I help?']",You there?,greeting
+[''],"['Hello, this is London Tube journey planner AI. how can I help you?', 'Good to see you again', 'Hi, there! This is London Tube journey planner AI. how can I help?']",Hey there,greeting
+[''],"['Hello, this is London Tube journey planner AI. how can I help you?', 'Good to see you again', 'Hi, there! This is London Tube journey planner AI. how can I help?']",hey bot,greeting
+[''],"['Hello, this is London Tube journey planner AI. how can I help you?', 'Good to see you again', 'Hi, there! This is London Tube journey planner AI. how can I help?']",hey dude,greeting
+[''],"['Hello, this is London Tube journey planner AI. how can I help you?', 'Good to see you again', 'Hi, there! This is London Tube journey planner AI. how can I help?']",yo dude,greeting
+[''],"['Hello, this is London Tube journey planner AI. how can I help you?', 'Good to see you again', 'Hi, there! This is London Tube journey planner AI. how can I help?']",yo man,greeting
+[''],"['Hello, this is London Tube journey planner AI. how can I help you?', 'Good to see you again', 'Hi, there! This is London Tube journey planner AI. how can I help?']",Hey man,greeting
+[''],"['Hello, this is London Tube journey planner AI. how can I help you?', 'Good to see you again', 'Hi, there! This is London Tube journey planner AI. how can I help?']",Are you there?,greeting
+[''],"['See you!', 'Have a nice day', 'Bye! Come back again soon.']",Bye,goodbye
+[''],"['See you!', 'Have a nice day', 'Bye! Come back again soon.']",See you later,goodbye
+[''],"['See you!', 'Have a nice day', 'Bye! Come back again soon.']",bye bye,goodbye
+[''],"['See you!', 'Have a nice day', 'Bye! Come back again soon.']",later,goodbye
+[''],"['See you!', 'Have a nice day', 'Bye! Come back again soon.']",I will see you later,goodbye
+[''],"['See you!', 'Have a nice day', 'Bye! Come back again soon.']",see you later then,goodbye
+[''],"['See you!', 'Have a nice day', 'Bye! Come back again soon.']",Goodbye,goodbye
+[''],"['See you!', 'Have a nice day', 'Bye! Come back again soon.']","Nice chatting to you, bye",goodbye
+[''],"['See you!', 'Have a nice day', 'Bye! Come back again soon.']",Till next time,goodbye
+[''],"['See you!', 'Have a nice day', 'Bye! Come back again soon.']",Later,goodbye
+[''],"['See you!', 'Have a nice day', 'Bye! Come back again soon.']",Ciao,goodbye
+[''],"['See you!', 'Have a nice day', 'Bye! Come back again soon.']",See you,goodbye
+[''],"['See you!', 'Have a nice day', 'Bye! Come back again soon.']",Bye bye,goodbye
+[''],"['See you!', 'Have a nice day', 'Bye! Come back again soon.']",Farewell,goodbye
+[''],"['See you!', 'Have a nice day', 'Bye! Come back again soon.']",Good talk,goodbye
+[''],"['See you!', 'Have a nice day', 'Bye! Come back again soon.']",Good chat,goodbye
+[''],"['See you!', 'Have a nice day', 'Bye! Come back again soon.']",Peace out,goodbye
+[''],"['See you!', 'Have a nice day', 'Bye! Come back again soon.']",talk to you later,goodbye
+[''],"['See you!', 'Have a nice day', 'Bye! Come back again soon.']",ok bye,goodbye
+[''],"['See you!', 'Have a nice day', 'Bye! Come back again soon.']","alright, see you later",goodbye
+[''],"['See you!', 'Have a nice day', 'Bye! Come back again soon.']",Ok bye bye,goodbye
+[''],"['See you!', 'Have a nice day', 'Bye! Come back again soon.']",Alright bye,goodbye
+[''],"['See you!', 'Have a nice day', 'Bye! Come back again soon.']",bye botface,goodbye
+[''],"['See you!', 'Have a nice day', 'Bye! Come back again soon.']",see you later bot,goodbye
+[''],"['Happy to help!', 'Any time!', 'My pleasure', 'No problem!', 'Cheers']",Thanks,thanks
+[''],"['Happy to help!', 'Any time!', 'My pleasure', 'No problem!', 'Cheers']",Thank you,thanks
+[''],"['Happy to help!', 'Any time!', 'My pleasure', 'No problem!', 'Cheers']",thanks,thanks
+[''],"['Happy to help!', 'Any time!', 'My pleasure', 'No problem!', 'Cheers']",many thanks,thanks
+[''],"['Happy to help!', 'Any time!', 'My pleasure', 'No problem!', 'Cheers']",thank you again,thanks
+[''],"['Happy to help!', 'Any time!', 'My pleasure', 'No problem!', 'Cheers']",thanks,thanks
+[''],"['Happy to help!', 'Any time!', 'My pleasure', 'No problem!', 'Cheers']",thank you,thanks
+[''],"['Happy to help!', 'Any time!', 'My pleasure', 'No problem!', 'Cheers']",That's helpful,thanks
+[''],"['Happy to help!', 'Any time!', 'My pleasure', 'No problem!', 'Cheers']","Awesome, thanks",thanks
+[''],"['Happy to help!', 'Any time!', 'My pleasure', 'No problem!', 'Cheers']",Thanks for helping me,thanks
+[''],"['Happy to help!', 'Any time!', 'My pleasure', 'No problem!', 'Cheers']",Thanks a lot!,thanks
+[''],"['Happy to help!', 'Any time!', 'My pleasure', 'No problem!', 'Cheers']",Thank you so much,thanks
+[''],"['Happy to help!', 'Any time!', 'My pleasure', 'No problem!', 'Cheers']","I appreciate your help, thanks",thanks
+[''],"['Happy to help!', 'Any time!', 'My pleasure', 'No problem!', 'Cheers']",Many thanks,thanks
+[''],"['Happy to help!', 'Any time!', 'My pleasure', 'No problem!', 'Cheers']",Grateful for your help,thanks
+[''],"['Happy to help!', 'Any time!', 'My pleasure', 'No problem!', 'Cheers']",Cool that's helpful,thanks
+[''],"['Happy to help!', 'Any time!', 'My pleasure', 'No problem!', 'Cheers']",Much appreciated,thanks
+[''],"['Happy to help!', 'Any time!', 'My pleasure', 'No problem!', 'Cheers']",I appreciate your help,thanks
+[''],"['Happy to help!', 'Any time!', 'My pleasure', 'No problem!', 'Cheers']","Ok, thanks!",thanks
+[''],"['Happy to help!', 'Any time!', 'My pleasure', 'No problem!', 'Cheers']","Alright, much appreciated",thanks
+[''],"['Happy to help!', 'Any time!', 'My pleasure', 'No problem!', 'Cheers']","cool, thanks!",thanks
+[''],"['Happy to help!', 'Any time!', 'My pleasure', 'No problem!', 'Cheers']",thank you very much!,thanks
+[''],"['Happy to help!', 'Any time!', 'My pleasure', 'No problem!', 'Cheers']",Thanks!,thanks
+[''],"['Happy to help!', 'Any time!', 'My pleasure', 'No problem!', 'Cheers']","That's really helpful, much appreciated",thanks
+[''],"['Happy to help!', 'Any time!', 'My pleasure', 'No problem!', 'Cheers']","you are the best, thanks",thanks
+[''],"['Happy to help!', 'Any time!', 'My pleasure', 'No problem!', 'Cheers']","Alright, thanks a lot",thanks
+[''],"['I can provide you with infomation which benefits your journey across the TfL network', 'I can help you look up infomation on your journey, such as fares, travel time, line status based on the date and location you provide to me']",How can help me?,options
+[''],"['I can provide you with infomation which benefits your journey across the TfL network', 'I can help you look up infomation on your journey, such as fares, travel time, line status based on the date and location you provide to me']",What you can do?,options
+[''],"['I can provide you with infomation which benefits your journey across the TfL network', 'I can help you look up infomation on your journey, such as fares, travel time, line status based on the date and location you provide to me']",What help do you provide?,options
+[''],"['I can provide you with infomation which benefits your journey across the TfL network', 'I can help you look up infomation on your journey, such as fares, travel time, line status based on the date and location you provide to me']",How you can be helpful?,options
+[''],"['I can provide you with infomation which benefits your journey across the TfL network', 'I can help you look up infomation on your journey, such as fares, travel time, line status based on the date and location you provide to me']",What support is offered?,options
+[''],"['I can provide you with infomation which benefits your journey across the TfL network', 'I can help you look up infomation on your journey, such as fares, travel time, line status based on the date and location you provide to me']",What are your services?,options
+[''],"['I can provide you with infomation which benefits your journey across the TfL network', 'I can help you look up infomation on your journey, such as fares, travel time, line status based on the date and location you provide to me']",Tell me stuff,options
+[''],"['I can provide you with infomation which benefits your journey across the TfL network', 'I can help you look up infomation on your journey, such as fares, travel time, line status based on the date and location you provide to me']",Why do you exist?,options
+[''],"['I can provide you with infomation which benefits your journey across the TfL network', 'I can help you look up infomation on your journey, such as fares, travel time, line status based on the date and location you provide to me']",What is your purpose?,options
+[''],"['I can provide you with infomation which benefits your journey across the TfL network', 'I can help you look up infomation on your journey, such as fares, travel time, line status based on the date and location you provide to me']","Help me, what can you do?",options
+[''],"['I can provide you with infomation which benefits your journey across the TfL network', 'I can help you look up infomation on your journey, such as fares, travel time, line status based on the date and location you provide to me']",How can you help me?,options
+[''],"['I can provide you with infomation which benefits your journey across the TfL network', 'I can help you look up infomation on your journey, such as fares, travel time, line status based on the date and location you provide to me']",What do you do?,options
+[''],"['I can provide you with infomation which benefits your journey across the TfL network', 'I can help you look up infomation on your journey, such as fares, travel time, line status based on the date and location you provide to me']",What is it that you do here?,options
+[''],"['I can provide you with infomation which benefits your journey across the TfL network', 'I can help you look up infomation on your journey, such as fares, travel time, line status based on the date and location you provide to me']",What is the meaning of your existence?,options
+[''],[''],tube to Westminster,SearchRoute
+[''],[''],subway to Bank,SearchRoute
+[''],[''],I wanna go to Baker Street,SearchRoute
+[''],[''],which tube line should I take to go to Euston?,SearchRoute
+[''],[''],I want to go to Camden Town,SearchRoute
+[''],[''],I need to get to Charing Cross,SearchRoute
+[''],[''],can you take the tube to Wembley?,SearchRoute
+[''],[''],tell me how to get to Moorgate,SearchRoute
+[''],[''],How do I get from Barking to Wembley Park using the Tube?,SearchRoute
+[''],[''],What is the best route to get to Canary Wharf from my current location?,SearchRoute
+[''],[''],What is the best route to reach the West End from Cockfosters using the Tube?,SearchRoute
+[''],[''],Can I use the Tube to travel from Blackfriars to Heathrow?,SearchRoute
+[''],[''],What is the best route to reach Vaxuhall from Waterloo on the Tube?,SearchRoute
+[''],[''],Can you suggest a route from Piccadilly Circus to Southwark?,SearchRoute
+[''],[''],How much is the fare from Brixton to Hammersmiths if I take the tube at 5pm?,SearchFare
+[''],[''],how much does it cost to go to Earls Court,SearchFare
+[''],[''],adult ticket to zone 1,SearchFare
+[''],[''],child ticket to Acton Town,SearchFare
+[''],[''],tell me how much the fare is to go to Embankment,SearchFare
+[''],[''],What is the estimated travel time from Leytonstone to Liverpool Street?,SearchTime
+[''],[''],How long does it take to travel from Amersham to Barons Court?,SearchTime
+[''],[''],How much time should I allocate for a journey from Richmond to Monument?,SearchTime
+[''],[''],Can you provide an estimate of the travel time from Uxbridge to my current location?,SearchTime
+[''],[''],What is the duration of a journey from Walthamstow to Willesden?,SearchTime
+[''],[''],How long is the journey from St. Paul's to White City?,SearchTime
+[''],[''],tell me the estimated travel time from Leytonstone to Liverpool Street,SearchTime
+[''],[''],tell me how long it takes from Amersham to Barons Court,SearchTime
+[''],[''],tell me the duration of a journey from Walthamstow to Willesden,SearchTime

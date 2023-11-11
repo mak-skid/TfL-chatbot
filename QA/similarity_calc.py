@@ -28,6 +28,6 @@ def similarity_calc(documents, query):
 
     cosine_similarities = cosine_similarity(queryTFIDF, datasetTFIDF).flatten()
 
-    return cosine_similarities.argsort()[:-11:-1]
+    return cosine_similarities.argsort()[:-3:-1]
     
     
