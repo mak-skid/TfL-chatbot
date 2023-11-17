@@ -3,7 +3,7 @@ from nltk.corpus import stopwords
 from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
 from nltk.stem.snowball import PorterStemmer
 from sklearn.metrics.pairwise import cosine_similarity
-
+import numpy as np
 
 def similarity_calc(documents, query):
     """
@@ -31,8 +31,11 @@ def similarity_calc(documents, query):
     datasetTFIDF = tfidf_transformer.fit_transform(X_train_counts)
     queryTFIDF = tfidf_transformer.transform(X_query_counts)
 
-    cosine_similarities = cosine_similarity(queryTFIDF, datasetTFIDF).flatten()
+    cosine_similarities = cosine_similarity(queryTFIDF, datasetTFIDF) 
 
-    return cosine_similarities.argsort()[:-2:-1]
+    # Similarity threshold
+    threshold = 0.8
+
+    return cosine_similarities.flatten().argsort()[:-2:-1][0] if np.any(cosine_similarities > threshold) else None
     
     
