@@ -96,31 +96,3 @@ T94,[""],How can you help me?,"I can help you look up infomation on your journey
 T95,[""],What do you do?,"I can help you look up infomation on your journey, such as fares, travel time, line status based on the date and location you provide to me",options
 T96,[""],What is it that you do here?,"I can help you look up infomation on your journey, such as fares, travel time, line status based on the date and location you provide to me",options
 T97,[""],What is the meaning of your existence?,"I can help you look up infomation on your journey, such as fares, travel time, line status based on the date and location you provide to me",options
-T98,[""],tube to Westminster,[""],SearchRoute
-T99,[""],subway to Bank,[""],SearchRoute
-T100,[""],I wanna go to Baker Street,[""],SearchRoute
-T101,[""],which tube line should I take to go to Euston?,[""],SearchRoute
-T102,[""],I want to go to Camden Town,[""],SearchRoute
-T103,[""],I need to get to Charing Cross,[""],SearchRoute
-T104,[""],can you take the tube to Wembley?,[""],SearchRoute
-T105,[""],tell me how to get to Moorgate,[""],SearchRoute
-T106,[""],How do I get from Barking to Wembley Park using the Tube?,[""],SearchRoute
-T107,[""],What is the best route to get to Canary Wharf from my current location?,[""],SearchRoute
-T108,[""],What is the best route to reach the West End from Cockfosters using the Tube?,[""],SearchRoute
-T109,[""],Can I use the Tube to travel from Blackfriars to Heathrow?,[""],SearchRoute
-T110,[""],What is the best route to reach Vaxuhall from Waterloo on the Tube?,[""],SearchRoute
-T111,[""],Can you suggest a route from Piccadilly Circus to Southwark?,[""],SearchRoute
-T112,[""],How much is the fare from Brixton to Hammersmiths if I take the tube at 5pm?,[""],SearchFare
-T113,[""],how much does it cost to go to Earls Court,[""],SearchFare
-T114,[""],adult ticket to zone 1,[""],SearchFare
-T115,[""],child ticket to Acton Town,[""],SearchFare
-T116,[""],tell me how much the fare is to go to Embankment,[""],SearchFare
-T117,[""],What is the estimated travel time from Leytonstone to Liverpool Street?,[""],SearchTime
-T118,[""],How long does it take to travel from Amersham to Barons Court?,[""],SearchTime
-T119,[""],How much time should I allocate for a journey from Richmond to Monument?,[""],SearchTime
-T120,[""],Can you provide an estimate of the travel time from Uxbridge to my current location?,[""],SearchTime
-T121,[""],What is the duration of a journey from Walthamstow to Willesden?,[""],SearchTime
-T122,[""],How long is the journey from St. Paul"s to White City?,[""],SearchTime
-T123,[""],tell me the estimated travel time from Leytonstone to Liverpool Street,[""],SearchTime
-T124,[""],tell me how long it takes from Amersham to Barons Court,[""],SearchTime
-T125,[""],tell me the duration of a journey from Walthamstow to Willesden,[""],SearchTime

@@ -20,14 +20,14 @@ FID,OBJECTID,STATIONNAME,EASTING,NORTHING,LINES,NETWORK,Zone,x,y
 14,92,Baker Street,527955,182064,"Metropolitan, Bakerloo, Circle, Jubilee, Hammersmith & City",London Underground,1,-0.155454387,51.52249387
 238,304,Balham,528480,173244,Northern,London Underground,3,-0.151090206,51.44310998
 35,47,Bank,532710,181120,"Waterloo & City, Northern, Central",London Underground,1,-0.08729695,51.51291511
-67,473,BANK - DLR,532709,181114,n/a,DLR,1,-0.087316571,51.51286207
+67,473,Bank,532709,181114,n/a,DLR,1,-0.087316571,51.51286207
 9,87,Barbican,532004,181856,"Metropolitan, Circle, Hammersmith & City",London Underground,1,-0.097189673,51.51969921
 328,200,Barking,544359,184382,"District, Hammersmith & City",London Underground,4,0.081813552,51.53937511
 378,368,Barking,544422,184332,n/a,London Overground,4,0.082703641,51.53890805
 321,62,Barkingside,544799,189494,Central,London Underground,4,0.090259547,51.58519895
 131,243,Barons Court,524046,178328,"District, Piccadilly",London Underground,2,-0.213088174,51.48978737
 17,95,Bayswater,525843,180823,"District, Circle",London Underground,1,-0.186322701,51.51181507
-372,434,Beckenham Junction (Tramlink),537365,169843,n/a,Tramlink,4,-0.024636241,51.41045194
+372,434,Beckenham Junction,537365,169843,n/a,Tramlink,4,-0.024636241,51.41045194
 371,433,Beckenham Road,536190,169660,n/a,Tramlink,4,-0.04159356,51.40909636
 272,435,Beckton,543165,181514,n/a,DLR,3,0.063442568,51.51390419
 273,436,Beckton Park,542705,180873,n/a,DLR,3,0.056557435,51.50826026
@@ -38,7 +38,7 @@ FID,OBJECTID,STATIONNAME,EASTING,NORTHING,LINES,NETWORK,Zone,x,y
 140,291,Bermondsey,534460,179416,Jubilee,London Underground,2,-0.062745893,51.49718984
 90,53,Bethnal Green,535044,182718,Central,London Underground,2,-0.053074702,51.52672839
 142,130,Bethnal Green,534721,182351,n/a,London Overground,2,-0.057862441,51.52350343
-369,431,Birkbeck (Tramlink),535305,168963,n/a,Tramlink,4,-0.054580141,51.40304289
+369,431,Birkbeck,535305,168963,n/a,Tramlink,4,-0.054580141,51.40304289
 1,79,Blackfriars,531694,180893,"District, Circle",London Underground,1,-0.102020251,51.51111447
 423,426,Blackhorse Lane,534377,166865,n/a,Tramlink,5,-0.06870387,51.3844061
 206,117,Blackhorse Road,535761,189370,Victoria,London Underground,3,-0.040174342,51.58633801
@@ -72,7 +72,7 @@ FID,OBJECTID,STATIONNAME,EASTING,NORTHING,LINES,NETWORK,Zone,x,y
 141,292,Canary Wharf,537677,180140,Jubilee,London Underground,2,-0.016134819,51.50291749
 173,451,Canary Wharf DLR,537450,180322,n/a,DLR,2,-0.019337121,51.50461022
 233,294,Canning Town,539428,181377,Jubilee,London Underground,3,0.009568884,51.51360991
-284,452,CANNING TOWN - DLR,539443,181354,n/a,DLR,3,0.009772469,51.51339633
+284,452,Canning Town,539443,181354,n/a,DLR,3,0.009772469,51.51339633
 3,81,Cannon Street,532611,180900,"District, Circle",London Underground,1,-0.088801035,51.51096254
 157,168,Canonbury,532384,185035,n/a,London Overground,2,-0.090522836,51.54817851
 400,286,Canons Park,518187,191252,Jubilee,London Underground,5,-0.293102561,51.60721294
@@ -122,19 +122,19 @@ FID,OBJECTID,STATIONNAME,EASTING,NORTHING,LINES,NETWORK,Zone,x,y
 226,205,Ealing Common,518896,180346,"District, Piccadilly",London Underground,3,-0.286555479,51.50903565
 30,37,Earl's Court,525534,178552,"District, Piccadilly",London Underground,1,-0.19157701,51.4914734
 120,319,East Acton,521721,181198,Central,London Underground,2,-0.245569272,51.51609001
-417,415,East Croydon (Tramlink),532851,165702,n/a,Tramlink,5,-0.09106147,51.37431604
+417,415,East Croydon,532851,165702,n/a,Tramlink,5,-0.09106147,51.37431604
 249,262,East Finchley,527222,189184,Northern,London Underground,3,-0.163438627,51.58665344
 326,71,East Ham,542463,184275,"District, Hammersmith & City",London Underground,4,0.054454908,51.5388975
 285,457,East India,538732,180831,n/a,DLR,3,-0.000674542,51.50887121
 69,102,East Putney,524382,174870,District,London Underground,2,-0.209468663,51.45863492
 393,276,Eastcote,511153,187622,"Metropolitan, Piccadilly",London Underground,5,-0.39578946,51.57601384
 383,4,Edgware,519550,191940,Northern,London Underground,5,-0.273183711,51.61311251
-50,233,Edgware Road (Bakerloo),527047,181759,Bakerloo,London Underground,1,-0.168645951,51.51996099
+50,233,Edgware Road (Bakerloo Line),527047,181759,Bakerloo,London Underground,1,-0.168645951,51.51996099
 15,93,Edgware Road (Circle Line),527220,181697,Circle,London Underground,1,-0.166170742,51.51936413
 348,139,Edmondton Green,534318,193573,n/a,London Overground,4,-0.059376907,51.62445425
 97,230,Elephant & Castle,531909,179142,"Northern, Bakerloo",London Underground,2,-0.099577259,51.4953253
 430,27,Elm Park,552542,185716,District,London Underground,6,0.200311564,51.54920911
-367,429,Elmers End (Tramlink),535779,168391,n/a,Tramlink,4,-0.047979561,51.39779044
+367,429,Elmers End,535779,168391,n/a,Tramlink,4,-0.047979561,51.39779044
 178,458,Elverson Road,537877,176280,n/a,DLR,2,-0.014766759,51.46817948
 41,77,Embankment,530419,180396,"District, Bakerloo, Northern, Circle",London Underground,1,-0.120562428,51.50694137
 446,140,Emerson Park,553962,187871,n/a,London Overground,6,0.221721192,51.56818654
@@ -223,7 +223,7 @@ FID,OBJECTID,STATIONNAME,EASTING,NORTHING,LINES,NETWORK,Zone,x,y
 96,220,Kensal Green,523257,182790,Bakerloo,London Underground,2,-0.222882378,51.5300656
 165,182,Kensal Green,523241,182784,n/a,London Overground,2,-0.223116997,51.53001765
 166,183,Kensal Rise,523578,183250,n/a,London Overground,2,-0.218097094,51.53413249
-92,196,Kensington (Olympia),524342,179162,District,London Underground,2,-0.208533266,51.49722528
+92,196,Kensington,524342,179162,District,London Underground,2,-0.208533266,51.49722528
 196,372,Kensington Olympia,524351,179167,n/a,London Overground,2,-0.208397635,51.49726439
 116,315,Kentish Town,529009,185127,Northern,London Underground,2,-0.13914119,51.54978865
 167,184,Kentish Town West,528597,184691,n/a,London Overground,2,-0.145240267,51.54596266
@@ -271,7 +271,7 @@ FID,OBJECTID,STATIONNAME,EASTING,NORTHING,LINES,NETWORK,Zone,x,y
 89,52,Mile End,536501,182534,"District, Hammersmith & City, Central",London Underground,2,-0.032150165,51.52472507
 305,5,Mill Hill East,524046,191450,Northern,London Underground,4,-0.208460194,51.60773582
 361,402,Mitcham,527331,168086,n/a,Tramlink,4,-0.16947597,51.39700089
-362,403,Mitcham Junction (Tramlink),528300,167568,n/a,Tramlink,4,-0.155733719,51.39213248
+362,403,Mitcham Junction,528300,167568,n/a,Tramlink,4,-0.155733719,51.39213248
 4,82,Monument,532912,180824,"District, Circle",London Underground,1,-0.084502291,51.51020898
 461,324,Moor Park,508606,193503,Metropolitan,London Underground,7,-0.430710233,51.6293749
 8,86,Moorgate,532668,181668,"Metropolitan, Northern, Circle, Hammersmith & City",London Underground,1,-0.087700241,51.5178533
@@ -446,7 +446,7 @@ FID,OBJECTID,STATIONNAME,EASTING,NORTHING,LINES,NETWORK,Zone,x,y
 251,269,West Acton,519373,181296,Central,London Underground,3,-0.279364414,51.51747345
 133,245,West Brompton,525381,178024,District,London Underground,2,-0.193973832,51.48676791
 402,129,West Croydon,532133,166072,n/a,London Overground,5,-0.101229704,51.37780543
-413,411,West Croydon (Tramlink),532210,166142,n/a,Tramlink,5,-0.100095218,51.37841469
+413,411,West Croydon,532210,166142,n/a,Tramlink,5,-0.100095218,51.37841469
 344,265,West Finchley,525546,191627,Northern,London Underground,4,-0.186738929,51.60898928
 222,201,West Ham,539131,182945,"District, Hammersmith & City, Jubilee",London Underground,3,0.00590508,51.52776913
 288,474,WEST HAM - DLR,539182,182943,n/a,DLR,3,0.006640951,51.52774122
@@ -469,7 +469,7 @@ FID,OBJECTID,STATIONNAME,EASTING,NORTHING,LINES,NETWORK,Zone,x,y
 248,261,Willesden Junction,521858,182960,Bakerloo,London Underground,3,-0.242978972,51.5318981
 478,364,Willesden Junction,521879,182944,n/a,London Overground,0,-0.242688895,51.5317515
 240,333,Wimbledon,524800,170684,District,London Underground,3,-0.204921053,51.42091587
-269,396,Wimbledon (Tramlink),524838,170637,n/a,Tramlink,3,-0.204395752,51.42048966
+269,396,Wimbledon,524838,170637,n/a,Tramlink,3,-0.204395752,51.42048966
 203,100,Wimbledon Park,525282,172100,District,London Underground,3,-0.19749098,51.43353749
 220,193,Wood Green,531015,190428,Piccadilly,London Underground,3,-0.108246806,51.5969712
 121,334,Wood Lane,523374,180519,"Hammersmith & City, Circle",London Underground,2,-0.221994162,51.50963208

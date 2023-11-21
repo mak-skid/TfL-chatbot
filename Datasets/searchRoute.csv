@@ -1,0 +1,15 @@
+id,context,text,response,intent,entities
+SR1,[""],"tube to DST",[""],SearchRoute
+SR2,[""],"subway to DST",[""],SearchRoute
+SR3,[""],"i wanna go to DST",[""],SearchRoute
+SR4,[""],"which tube line should i take to go to DST?",[""],SearchRoute
+SR5,[""],i want to go to DST,[""],SearchRoute
+SR6,[""],i need to get to DST,[""],SearchRoute
+SR7,[""],can you take the tube to DST?,[""],SearchRoute
+SR8,[""],tell me how to get to DST,[""],SearchRoute
+SR9,[""],how do i get from ORN to DST using the tube?,[""],SearchRoute
+SR10,[""],what is the best route to get to DST from ORN?,[""],SearchRoute
+SR11,[""],what is the best route to reach DST from ORN using the tube?,[""],SearchRoute
+SR12,[""],can i use the tube to travel from ORN to DST?,[""],SearchRoute
+SR13,[""],what is the best route to reach DST from ORN on the tube?,[""],SearchRoute
+SR14,[""],can you suggest a route from ORN to DST?,[""],SearchRoute,[]

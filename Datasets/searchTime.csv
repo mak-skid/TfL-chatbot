@@ -1,0 +1,10 @@
+id,context,text,response,intent
+ST1,[""],what is the estimated travel time from ORN to DST?,[""],SearchTime
+ST2,[""],how long does it take to travel from ORN to DST?,[""],SearchTime
+ST3,[""],how much time should I allocate for a journey from ORN to DST?,[""],SearchTime
+ST4,[""],can you provide an estimate of the travel time from ORN?,[""],SearchTime
+ST5,[""],what is the duration of a journey from ORN to DST?,[""],SearchTime
+ST6,[""],how long is the journey from ORN to DST?,[""],SearchTime
+ST7,[""],tell me the estimated travel time from ORN to DST,[""],SearchTime
+ST8,[""],tell me how long it takes from ORN to DST,[""],SearchTime
+ST9,[""],tell me the duration of a journey from ORN to DST,[""],SearchTime

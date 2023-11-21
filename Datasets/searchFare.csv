@@ -1,0 +1,6 @@
+id,context,text,response,intent
+SF1,[""],how much is the fare from ORN to DST?,[""],SearchFare
+SF2,[""],how much does it cost to go to DST from ORN,[""],SearchFare
+SF3,[""],adult ticket to DST,[""],SearchFare
+SF4,[""],child ticket to DST,[""],SearchFare
+SF5,[""],tell me how much the fare is to go to DST from ORN,[""],SearchFare
