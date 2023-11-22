@@ -1,4 +1,4 @@
-id,context,text,response,intent,entities
+id,context,text,response,intent
 SR1,[""],"tube to DST",[""],SearchRoute
 SR2,[""],"subway to DST",[""],SearchRoute
 SR3,[""],"i wanna go to DST",[""],SearchRoute
