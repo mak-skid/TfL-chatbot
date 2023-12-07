@@ -44,8 +44,11 @@ def max_similarity(documents, query):
         max_similarity = similarity_calc(key, intent_docs.values(), query)
         if max_similarity[2]:
             max_similarities.append(max_similarity)
-
+    
+    if not max_similarities:
+        return None
+    
     max_similarity_index = max(max_similarities, key=itemgetter(2))
-    return max_similarity_index[0] + str(max_similarity_index[1]) if max_similarity_index else None 
+    return max_similarity_index[0] + str(max_similarity_index[1] + 1) if max_similarity_index else None 
     
     

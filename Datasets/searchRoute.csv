@@ -13,3 +13,4 @@ SR11,[""],what is the best route to reach DST from ORN using the tube?,[""],Sear
 SR12,[""],can i use the tube to travel from ORN to DST?,[""],SearchRoute
 SR13,[""],what is the best route to reach DST from ORN on the tube?,[""],SearchRoute
 SR14,[""],can you suggest a route from ORN to DST?,[""],SearchRoute,[]
+SR15,[""],what is the fastest route from ORN to DST?",[""],SearchRoute,[]

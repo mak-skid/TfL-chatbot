@@ -7189,8 +7189,8 @@ C7187,"[""]",Do I have any kids?,"I don't know you well, but I enjoy chatting wi
 C7188,"[""]",Do I have any pets?,"I don't know you well, but I enjoy chatting with you.",chitchat
 C7189,"[""]",Do you even know me?,"I don't know you well, but I enjoy chatting with you.",chitchat
 C7190,"[""]",Do you even know my name?,"Your name is ",name
-C7191,"[""]",Do you even know who I am?,"I don't know you well, but I enjoy chatting with you.",chitchat
-C7192,"[""]",Do you know about me?,"I don't know you well, but I enjoy chatting with you.",chitchat
+C7191,"[""]",Do you even know who I am?,"Your name is ",chitchat
+C7192,"[""]",Do you know about me?,"Your name is ",chitchat
 C7193,"[""]",Do you know me personally?,"I don't know you well, but I enjoy chatting with you.",chitchat
 C7194,"[""]",What is my name?,"Your name is ",name
 C7195,"[""]",Do I have any children?,"I don't know you well, but I enjoy chatting with you.",chitchat

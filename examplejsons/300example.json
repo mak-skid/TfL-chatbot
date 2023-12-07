@@ -1,0 +1,127 @@
+{
+  "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.DisambiguationResult, Tfl.Api.Presentation.Entities",
+  "toLocationDisambiguation": {
+    "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Disambiguation, Tfl.Api.Presentation.Entities",
+    "disambiguationOptions": [
+      {
+        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.DisambiguationOption, Tfl.Api.Presentation.Entities",
+        "parameterValue": "1000031",
+        "uri": "/journey/journeyresults/shorditch/to/1000031?timeis=arriving&journeypreference=leastinterchange&accessibilitypreference=norequirements&walkingspeed=slow&cyclepreference=none&bikeproficiency=easy",
+        "place": {
+          "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+          "naptanId": "HUBBRX",
+          "modes": ["tube", "bus"],
+          "icsCode": "1000031",
+          "stopType": "stop",
+          "url": "/StopPoint/HUBBRX",
+          "commonName": "Brixton (London), Brixton Station",
+          "placeType": "StopPoint",
+          "additionalProperties": [],
+          "lat": 51.46269145401,
+          "lon": -0.11453956201
+        },
+        "matchQuality": 950
+      },
+      {
+        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.DisambiguationOption, Tfl.Api.Presentation.Entities",
+        "parameterValue": "1007526",
+        "uri": "/journey/journeyresults/shorditch/to/1007526?timeis=arriving&journeypreference=leastinterchange&accessibilitypreference=norequirements&walkingspeed=slow&cyclepreference=none&bikeproficiency=easy",
+        "place": {
+          "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+          "naptanId": "490G00007526",
+          "modes": ["bus"],
+          "icsCode": "1007526",
+          "stopType": "stop",
+          "url": "/StopPoint/490G00007526",
+          "commonName": "Brixton (London), Brixton Academy",
+          "placeType": "StopPoint",
+          "additionalProperties": [],
+          "lat": 51.465092081579996,
+          "lon": -0.11507407399
+        },
+        "matchQuality": 950
+      },
+      {
+        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.DisambiguationOption, Tfl.Api.Presentation.Entities",
+        "parameterValue": "1000325",
+        "uri": "/journey/journeyresults/shorditch/to/1000325?timeis=arriving&journeypreference=leastinterchange&accessibilitypreference=norequirements&walkingspeed=slow&cyclepreference=none&bikeproficiency=easy",
+        "place": {
+          "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+          "naptanId": "HUBBRX",
+          "modes": ["national-rail"],
+          "icsCode": "1000325",
+          "stopType": "stop",
+          "url": "/StopPoint/HUBBRX",
+          "commonName": "Brixton (London), Brixton Rail Station",
+          "placeType": "StopPoint",
+          "additionalProperties": [],
+          "lat": 51.46329722407,
+          "lon": -0.11418347842
+        },
+        "matchQuality": 938
+      }
+    ],
+    "matchStatus": "list"
+  },
+  "fromLocationDisambiguation": {
+    "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Disambiguation, Tfl.Api.Presentation.Entities",
+    "disambiguationOptions": [
+      {
+        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.DisambiguationOption, Tfl.Api.Presentation.Entities",
+        "parameterValue": "1012113",
+        "uri": "/journey/journeyresults/1012113/to/brixton?timeis=arriving&journeypreference=leastinterchange&accessibilitypreference=norequirements&walkingspeed=slow&cyclepreference=none&bikeproficiency=easy",
+        "place": {
+          "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+          "naptanId": "490G000744",
+          "modes": ["bus"],
+          "icsCode": "1012113",
+          "stopType": "stop",
+          "url": "/StopPoint/490G000744",
+          "commonName": "Shoreditch (London), Shoreditch",
+          "placeType": "StopPoint",
+          "additionalProperties": [],
+          "lat": 51.5256610083,
+          "lon": -0.07764370088
+        },
+        "matchQuality": 910
+      },
+      {
+        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.DisambiguationOption, Tfl.Api.Presentation.Entities",
+        "parameterValue": "1001571",
+        "uri": "/journey/journeyresults/1001571/to/brixton?timeis=arriving&journeypreference=leastinterchange&accessibilitypreference=norequirements&walkingspeed=slow&cyclepreference=none&bikeproficiency=easy",
+        "place": {
+          "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+          "naptanId": "910GSHRDHST",
+          "modes": ["overground", "bus"],
+          "icsCode": "1001571",
+          "stopType": "stop",
+          "url": "/StopPoint/910GSHRDHST",
+          "commonName": "Shoreditch (London), Shoreditch High Street Station",
+          "placeType": "StopPoint",
+          "additionalProperties": [],
+          "lat": 51.523422257229996,
+          "lon": -0.07602255886999999
+        },
+        "matchQuality": 854
+      }
+    ],
+    "matchStatus": "list"
+  },
+  "viaLocationDisambiguation": {
+    "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Disambiguation, Tfl.Api.Presentation.Entities",
+    "matchStatus": "empty"
+  },
+  "recommendedMaxAgeMinutes": 1440,
+  "searchCriteria": {
+    "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.SearchCriteria, Tfl.Api.Presentation.Entities",
+    "dateTime": "2023-12-06T11:36:00",
+    "dateTimeType": "Arriving"
+  },
+  "journeyVector": {
+    "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.JourneyVector, Tfl.Api.Presentation.Entities",
+    "from": "Shorditch",
+    "to": "Brixton",
+    "via": "",
+    "uri": "/journey/journeyresults/shorditch/to/brixton?timeis=arriving&journeypreference=leastinterchange&accessibilitypreference=norequirements&walkingspeed=slow&cyclepreference=none&bikeproficiency=easy"
+  }
+}

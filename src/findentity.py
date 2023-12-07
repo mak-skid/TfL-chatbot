@@ -1,5 +1,4 @@
 import spacy
-from spacy import displacy
 
 def findEntity(text):
     nlp_ner = spacy.load("model-last")  # location of your created model
