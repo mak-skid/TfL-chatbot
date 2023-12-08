@@ -2,10 +2,10 @@ import csv
 import time
 import os
 from similarity_calc import max_similarity, similarity_calc
-from intent_funcs import Identity
+from intent_funcs import Customer
 from joblib import dump, load
 
-class Main(Identity):
+class Main(Customer):
     def __init__(self) -> None:
         super().__init__()
         self.data = {}
@@ -15,15 +15,18 @@ class Main(Identity):
             "C":"chitchat", 
             "SF":"searchFare",
             "SR":"searchRoute",
-            "ST":"searchTime"
+            "ST":"searchTime",
+            "CD":"checkDisruptions"
         }
         self.lens = []
         self.documents = {}
         self.answers = {}
         self.similarities = {}
         
-    # Reading data from a CSV file and processing it into a Python data structure
     def readDocuments(self): 
+        """
+        Reads data from a CSV file and processes it into a Python data structure
+        """
         for key, csv_file in self.csv_files.items():
             path_to_csv = "./Datasets/" + csv_file + ".csv"
             len = 0
@@ -44,8 +47,10 @@ class Main(Identity):
         #dump(self.documents, "documents.joblib")
         #dump(self.answers, "answers.joblib")
 
-    # Actual interaction part.
     def interaction(self):
+        """
+        Actual interaction part.
+        """
         if os.path.exists("documents.joblib"):
             self.documents = load("documents.joblib")
             self.answers = load("answers.joblib")
@@ -67,6 +72,7 @@ class Main(Identity):
                     print("Sorry, I could not understand what you said. Could you clarify more?")
                     continue
                 response, intent = self.answers[document_id][0], self.answers[document_id][1]
+                
                 if intent == "name":
                     print(response + self.getName() + ".")
                     continue
@@ -75,26 +81,49 @@ class Main(Identity):
                     self.askName()
                     first_time = False
                     continue
+                if intent in ["goodbye"]:
+                    print(response)
+                    break
+                if intent == "options":
+                    print(response)
+                    continue
+                if intent == "enquiry":
+                    print(response)
+                    print("Do you have anything else to ask?")
+                    continue
                 if intent == "SearchRoute":
-                    if not self.isLoaded():
-                        self.getORNDST(query)
-                        map, _ = self.getStopPoint(intent)
-                        self.disambiguate(map)
+                    found = self.extractORNDST(query)
+                    self.getORNDST()
+                    map, status = self.getStopPoint(intent)
+                    if status == 404:
+                        self.ORNDSTreset()
+                        continue
+                    self.disambiguate(map)
                     self.getRoute()         
                 elif intent == "SearchFare":
-                    if not self.isLoaded():
-                        self.getORNDST(query)
-                        map, _ = self.getStopPoint(intent)
+                    found = self.extractORNDST(query)
+                    if found or not self.isLoaded():
+                        self.getORNDST()
+                        map, status = self.getStopPoint(intent)
+                        if status == 404:
+                            self.ORNDSTreset()
+                            continue
                         self.disambiguate(map)
                     self.getFare()
                 elif intent == "SearchTime":
                     pass
-
-                ifInit = input("Do you have anything else to ask about the route?: ")
-                if ifInit in ["No", "no"]:
-                    self.ORNDSTinit()
+                elif intent == "checkDisruptions":
+                    found = self.extractORNDST(query)
+                    if found or not self.isLoaded():
+                        self.getORNDST()
+                        map, status = self.getStopPoint(intent)
+                        if status == 404:
+                            self.ORNDSTreset()
+                            continue
+                        self.disambiguate(map)
+                    self.getRouteInfo()
                 
-                
+                print("Do you have anything else to ask about the route? If so, type in your question!")
 
         end = time.time()
         print("Session: " + str(round(end-start, 2)) + " sec")

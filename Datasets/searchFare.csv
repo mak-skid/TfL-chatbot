@@ -4,3 +4,12 @@ SF2,[""],how much does it cost to go to DST from ORN,[""],SearchFare
 SF3,[""],adult ticket to DST,[""],SearchFare
 SF4,[""],child ticket to DST,[""],SearchFare
 SF5,[""],tell me how much the fare is to go to DST from ORN,[""],SearchFare
+SF6,[""],how much is the fare?,[""],SearchFare
+SF7,[""],how much is the ticket?,[""],SearchFare
+SF8,[""],how much does it cost?,[""],SearchFare
+SF9,[""],how much is it going to cost,[""],SearchFare
+SF10,[""],How much does a peak-hour ticket cost on the London Underground?,[""],SearchFare
+SF11,[""],What is the off-peak fare for the London Underground?,[""],SearchFare
+SF12,[""],How much does it cost for a one-way journey from ORN to DST on the London Underground?,[""],SearchFare
+SF13,[""],What is the fare for a single journey from ORN to DST?,[""],SearchFare
+SF14,[""],Can you provide the cost of a ticket from ORN to DST?,[""],SearchFare
