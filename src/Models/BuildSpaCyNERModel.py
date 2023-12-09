@@ -1,10 +1,7 @@
 from __future__ import unicode_literals, print_function
-from BuildNERDataset import get_ner_dataset
-import plac
-import random
+from .BuildNERDataset import get_ner_dataset
 from pathlib import Path
 import spacy
-from spacy.training.example import Example
 from tqdm import tqdm
 from spacy.tokens import DocBin
 from spacy.util import filter_spans

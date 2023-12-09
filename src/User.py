@@ -1,14 +1,12 @@
 from datetime import datetime
-from urllib.error import HTTPError, URLError
-import spacy, csv, os
-from joblib import dump, load
-from nltk import word_tokenize
-import requests, json 
+import spacy
+import requests
 from itertools import cycle
 from time import sleep
 import threading
+from customNLTKNERModel import NLTKModel
 
-class Customer():
+class User():
     def __init__(self) -> None:
         self.name = ""
         self.DSTlist = []
@@ -16,7 +14,18 @@ class Customer():
         self.ORNlist = []
         self.origin = ""
         self.routeInfo = []
+        self.NERModel = "nltk"
     
+    def ORNDSTreset(self):
+        """
+        Resets user's starting point and destination information
+        """
+        self.DSTlist = []
+        self.destination = ""
+        self.ORNlist = []
+        self.origin = ""
+        self.routeInfo = []
+
     def isLoaded(self):
         """
         Checks if both origin and destination information are loaded. 
@@ -71,10 +80,15 @@ class Customer():
         """
         Extracts origin and destination from the text.
         If they are found, returns True.
-        """
-        nlp_ner = spacy.load("./src/model-last")  # location of your created model
 
-        doc = nlp_ner(text)
+        Prepared both SpaCy model and NLTK model
+        """
+        if self.NERModel == "spacy":
+            nlp_ner = spacy.load("./Models/customSpacyNERModel")
+            doc = nlp_ner(text)
+        else: #nltk model
+            nltk_ner = NLTKModel()
+            doc = nltk_ner.getDoc(text)
         
         found = False
         for ent in doc.ents:
@@ -115,25 +129,6 @@ class Customer():
         if len(self.DSTlist) == 0:
             print("I could not recognise the name of the station you are travelling to.")
             self.origin = input("Please type in the name of the station you are travelling to: ")
-
-        """
-        confirmation = input("I see you want to go to " + self.destination + " from " + self.origin + ". Is it correct?: ")
-
-        if not confirmation in ["Yes", "Yep", "Correct", "Yes." "Yes!"]:
-            self.ORNDSTreset()
-            text = input("Please type in where you are going from and to.")
-            self.getORNDST(text)
-        """
-
-    def ORNDSTreset(self):
-        """
-        Resets user's starting point and destination information
-        """
-        self.DSTlist = []
-        self.destination = ""
-        self.ORNlist = []
-        self.origin = ""
-        self.routeInfo = []
     
     def getStopPoint(self, intent):
         """

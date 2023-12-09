@@ -2,10 +2,10 @@ import csv
 import time
 import os
 from similarity_calc import max_similarity, similarity_calc
-from intent_funcs import Customer
+from User import User
 from joblib import dump, load
 
-class Main(Customer):
+class Main(User):
     def __init__(self) -> None:
         super().__init__()
         self.data = {}
@@ -22,6 +22,11 @@ class Main(Customer):
         self.documents = {}
         self.answers = {}
         self.similarities = {}
+        if os.path.exists("src/joblibs/documents.joblib"):
+            self.documents = load("src/joblibs/documents.joblib")
+            self.answers = load("src/joblibs/answers.joblib")
+        else:
+            self.readDocuments()
         
     def readDocuments(self): 
         """
@@ -44,19 +49,13 @@ class Main(Customer):
                 self.documents[key][row["id"]] = row["text"]
                 self.answers[row["id"]] = (row["response"], row["intent"])
         
-        #dump(self.documents, "documents.joblib")
-        #dump(self.answers, "answers.joblib")
+        dump(self.documents, "src/joblibs/documents.joblib")
+        dump(self.answers, "src/joblibs/answers.joblib")
 
     def interaction(self):
         """
         Actual interaction part.
         """
-        if os.path.exists("documents.joblib"):
-            self.documents = load("documents.joblib")
-            self.answers = load("answers.joblib")
-        else:
-            self.readDocuments()
-        
         stop = False
         start = time.time()
         first_time = True
