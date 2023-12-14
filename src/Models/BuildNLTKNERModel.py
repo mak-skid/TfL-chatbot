@@ -2,7 +2,7 @@ import os
 from joblib import dump, load
 from nltk import word_tokenize, pos_tag
 from nltk.chunk import conlltags2tree, tree2conlltags
-from nltk.tag import UnigramTagger, BigramTagger
+from nltk.tag import BigramTagger
 from nltk.chunk import ChunkParserI
 
 from .BuildNERDataset import get_ner_dataset
@@ -10,7 +10,7 @@ from .BuildNERDataset import get_ner_dataset
 def custom_tagger(original_text, tokens, entities):
     """
     Based on the stationNERDataset's entity mapping, tags each token with a entity label, and returns a list 
-    >>> [('I', 'PRP', 'O'), ('wan', 'VBP', 'O'), ('na', 'RB', 'O'), ('go', 'VBP', 'O'), ('to', 'TO', 'O'), ('Brixton', 'NNP', 'B-DST'), ('from', 'IN', 'O'), ('Liverpool', 'NNP', 'B-DST'), ('Street', 'NNP', 'B-DST')]
+    >>> [('I', 'PRP', 'O'), ('wan', 'VBP', 'O'), ('na', 'RB', 'O'), ('go', 'VBP', 'O'), ('to', 'TO', 'O'), ('Brixton', 'NNP', 'B-DST'), ('from', 'IN', 'O'), ('Liverpool', 'NNP', 'B-ORN'), ('Street', 'NNP', 'I-ORN')]
     """
     DSTtokens, ORNtokens, result = [], [], []
     for entity in entities:
@@ -64,7 +64,7 @@ def conll_tag_chunks(chunk_sents):
 
 class NamedEntityChunker(ChunkParserI):
     """
-    Define a custom chunker using UnigramTagger
+    Define a custom chunker using BigramTagger
     """
     def __init__(self, train_sents):
         train_data = conll_tag_chunks(train_sents)
@@ -90,5 +90,4 @@ def buildModel():
     else:
         train_set = load("src/joblibs/nltk_ner_model_trainset.joblib")
     ner_chunker = NamedEntityChunker(train_set)
-    print("Build completed!")
     return ner_chunker

@@ -52,7 +52,7 @@ class User():
         """
         try:
             int(variable)
-            return True # Successfully converted to int, so it's a number
+            return True   # Successfully converted to int, so it's a number
         except ValueError:
             return False   # Conversion to int failed, so it's not a number
     
@@ -84,7 +84,7 @@ class User():
         Prepared both SpaCy model and NLTK model
         """
         if self.NERModel == "spacy":
-            nlp_ner = spacy.load("./Models/customSpacyNERModel")
+            nlp_ner = spacy.load("src/Models/customSpacyNERModel")
             doc = nlp_ner(text)
         else: #nltk model
             nltk_ner = NLTKModel()
@@ -111,12 +111,12 @@ class User():
         """
         if len(self.ORNlist) > 1:
             indexed_origin = {i+1: self.ORNlist[i] for i in range(len(self.ORNlist))}
-            print("More than one station names have been detected as your starting station.")
+            print("Oops, more than one station names have been detected as your starting station.")
             ornIndex = self.check_input("Which station are you travelling from? Select a number: " + str(indexed_origin) + " ", range(1, len(self.ORNlist)+1))
             self.origin = self.ORNlist[int(ornIndex)-1]
         if len(self.DSTlist) > 1:
             indexed_dst = {i+1: self.DSTlist[i] for i in range(len(self.DSTlist))}
-            print("More than one station names have been detected as the station of your destination.")
+            print("Oops, more than one station names have been detected as the station of your destination.")
             dstIndex = self.check_input("Which station are you travelling to? Select a number: " + str(indexed_dst) + " ", range(1, len(self.DSTlist)+1))
             self.destination = self.DSTlist[int(dstIndex)-1]
         if len(self.ORNlist) == 1:
@@ -124,22 +124,25 @@ class User():
         if len(self.DSTlist) == 1:
             self.destination = self.DSTlist[0]
         if len(self.ORNlist) == 0:
-            print("I could not recognise the name of the station you are travelling from.")
+            print("Sorry, I could not recognise the name of the station you are travelling from.")
             self.origin = input("Please type in the name of the station you are travelling from: ")
         if len(self.DSTlist) == 0:
-            print("I could not recognise the name of the station you are travelling to.")
-            self.origin = input("Please type in the name of the station you are travelling to: ")
-    
+            print("Sorry, I could not recognise the name of the station you are travelling to.")
+            self.destination = input("Please type in the name of the station you are travelling to: ")
+
     def getStopPoint(self, intent):
         """
         Sends a request to API and get a list of stop points. 
         When sucessful, dictionary of origins and destinations and status 200 are returned. 
         Otherwise, or if no stations that matche the original are found, None and 404 are returned.
         """
-        # API returns nothing when the query contains 'station' so escape
+        """ 
+        API returns nothing when the query contains 'station' and 'station' so escapes it here.
+        The API's issues regarding HUB naptanID are discussed here: https://techforum.tfl.gov.uk/t/retrieve-the-stoppoint-id-using-common-name/780/4
+        """
         originalValues = {"destinations": self.destination, "origins": self.origin}
-        self.destination = self.destination.lower().replace(" station","").replace(" ", "%20")
-        self.origin = self.origin.lower().replace(" station","").replace(" ", "%20")
+        self.destination = self.destination.lower().replace(" station","").replace(" airport", "").replace(" ", "%20")
+        self.origin = self.origin.lower().replace(" station","").replace(" airport", "").replace(" ", "%20")
         
         if intent == "SearchRoute":
             mode = "bus,overground,national-rail,tube,dlr,tram,walking"
@@ -150,14 +153,15 @@ class User():
         for key, stopPoint in map.items():
             url = f"https://api.tfl.gov.uk/StopPoint/Search/{stopPoint}?modes={mode}&includeHubs=False"
             response = self.sendRequest(url)
+
             if response.status_code != 200:
-                print(f"I could not find a station or a stop that matches '{originalValues[key]}'. Please start again.")
+                print(f"Sorry, I could not find a station or a stop that matches '{originalValues[key]}'.")
                 return None, 404
             else:
                 data = response.json()
                 matches = data["matches"]
                 if not matches:
-                    print(f"I could not find a station or a stop that matches '{originalValues[key]}'. Please start again.")
+                    print(f"Sorry, I could not find a station or a stop that matches '{originalValues[key]}'.")
                     return None, 404
                 map[key] = {j+1: {
                     "commonName": match["name"],
@@ -176,7 +180,7 @@ class User():
         if o > 1 or d > 1:
             print("There are multiple stations and stops available around the locations you provided.")
         if o > 1:
-            print("Choose the number of the station or the stop from which you are departing from the list below")
+            print("Please select the number of the station or the stop from which you are departing from the list below")
             for i, item in map["origins"].items():
                 name = item["commonName"]
                 modes = ", ".join(item["availableModes"])
@@ -187,7 +191,7 @@ class User():
             originIndex = 1
         
         if d > 1:
-            print("Choose the number of the station or the stop to which you are going from the list below")
+            print("Please select the number of the station or the stop to which you are going from the list below")
             for i, item in map["destinations"].items():
                 name = item["commonName"]
                 modes = ", ".join(item["availableModes"])
@@ -209,7 +213,7 @@ class User():
             n_points = 5
             points_l = ['.' * i + ' ' * (n_points - i) + '\r' for i in range(n_points)]
             for points in cycle(points_l):
-                print(points, end='')
+                print("Just a moment" + points, end='')
                 sleep(0.1)
                 if done:
                     break
@@ -257,7 +261,7 @@ class User():
             if i < len(legs)-1:
                 output += " Then, "
             else:
-                output += f" In total, it will take {str(duration)} minutes. The estimated arrival time is {arrivalTime}."
+                output += f"\nIn total, it will take {str(duration)} minutes. The estimated arrival time is {arrivalTime}."
         
         print(output)
         
@@ -294,8 +298,10 @@ class User():
                     ticketTime = ticket["ticketTime"]["type"]
                     if ticketTime == "Peak":
                         print(f"£{cost} during {ticketTime} time. Peak time applies to {ticketTimeDescription}")
+                    elif ticketTime == "Anytime":
+                        print(f"£{cost} at {ticketTime.lower()}.")
                     else:
-                        print(f"£{cost} during {ticketTime} time. This applies to {ticketTimeDescription}")
+                        print(f"£{cost} during {ticketTime} time. This applies to {ticketTimeDescription.lower()}")
         
     def getRouteInfo(self):
         """
@@ -325,7 +331,7 @@ class User():
         output = "Currently, good service and no planned work on the route."
         for i, disruption in enumerate(self.routeInfo):
             if i == 0:
-                output = "\nPlease mind a disruption on the suggested route. "
+                output = "\nPlease mind the following disruptions on the suggested route. "
             type, description = disruption["type"], disruption["description"]
             output += f"\nDisruption Type: {type}, {description}"
         print(output)

@@ -1,6 +1,4 @@
-import os
-from joblib import load
-from Models.BuildNERDataset import get_ner_dataset
+from Models.BuildNERDataset import get_test_ner_dataset
 from Models.BuildNLTKNERModel import buildModel, convert_to_iob
 from nltk import word_tokenize, pos_tag, tree2conlltags
 
@@ -11,15 +9,14 @@ class NLTKModel():
 
     def evaluate(self):
         # Evaluate the custom NER model
-        dataset = get_ner_dataset() 
-        iob_data = convert_to_iob(dataset)
+        test_dataset = get_test_ner_dataset() 
+        iob_data = convert_to_iob(test_dataset)
         accuracy = self.ner_chunker.accuracy(iob_data)
         print(f"Accuracy: {accuracy}")
     
     def getDoc(self, text):
-        test_sentence = word_tokenize(text)
-        ner_result = self.ner_chunker.parse(pos_tag(test_sentence))
-        print(ner_result)
+        tokens = word_tokenize(text)
+        ner_result = self.ner_chunker.parse(pos_tag(tokens))
         conll_result = tree2conlltags(ner_result)
 
         class entity():
@@ -28,6 +25,7 @@ class NLTKModel():
                 self.label_ = ""
 
         dst, orn = [], []
+        
         for token in conll_result:
             if "DST" in token[2]:
                 dst.append(token[0])
@@ -58,3 +56,9 @@ class NLTKModel():
             self.ents.append(ent)        
             
         return self
+    
+"""
+# for evaluation of the model
+model = NLTKModel()
+model.evaluate()
+"""

@@ -1,8 +1,8 @@
 id,context,text,response,intent
-CD1,is there any disruptions on the route?,[""],checkDisruptions
+CD1,is there any disruption on the route?,[""],checkDisruptions
 CD2,is there any disruption from DST to ORN,[""],checkDisruptions
 CD3,are there delays on the route?,[""],checkDisruptions
-CD4,Is the tube running on schedule right now?",[""],checkDisruptions
+CD4,Is the tube running on schedule right now?,[""],checkDisruptions
 CD5,Are there any disruptions affecting the train service at the moment?,[""],checkDisruptions
 CD6,Can you provide information on the current status of the line?,[""],checkDisruptions
 CD7,Can you let me know if there are any delays I should be aware of?,[""],checkDisruptions
@@ -16,3 +16,7 @@ CD14,Can you provide information on the punctuality of the subway service now?,[
 CD15,Can you update me on the current operational status of the tube line?,[""],checkDisruptions
 CD16,Are there any hitches or setbacks affecting subway services right now?,[""],checkDisruptions
 CD17,Can you check if the subway is running according to its usual schedule?,[""],checkDisruptions
+CD18,are there delays on the route?,[""],checkDisruptions
+CD19,are there disruptions on the route?,[""],checkDisruptions
+CD20,is it operating as normal?,[""],checkDisruptions
+CD21,what is the current status of the line?,[""],checkDisruptions 

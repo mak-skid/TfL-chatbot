@@ -1,22 +1,23 @@
 import csv
 import time
 import os
-from similarity_calc import max_similarity, similarity_calc
+from similarity_calc import max_similarity
 from User import User
 from joblib import dump, load
 
 class Main(User):
     def __init__(self) -> None:
         super().__init__()
+        self.stop = False
         self.data = {}
         self.csv_files = {
             "Q":"QADataset",
             "T":"travel_chat", 
-            "C":"chitchat", 
+            "C":"chitchat",
+            "CD":"checkDisruptions", 
             "SF":"searchFare",
             "SR":"searchRoute",
-            "ST":"searchTime",
-            "CD":"checkDisruptions"
+            "ST":"searchTime"
         }
         self.lens = []
         self.documents = {}
@@ -30,7 +31,7 @@ class Main(User):
         
     def readDocuments(self): 
         """
-        Reads data from a CSV file and processes it into a Python data structure
+        Reads data from CSV files and load them onto the self.documents and self.answers dictionaries.
         """
         for key, csv_file in self.csv_files.items():
             path_to_csv = "./Datasets/" + csv_file + ".csv"
@@ -56,15 +57,15 @@ class Main(User):
         """
         Actual interaction part.
         """
-        stop = False
         start = time.time()
         first_time = True
 
-        while not stop:    
+        print("Hello, this is London Tube journey planner AI. How can I help you?")
+        while not self.stop:    
             query = input("Send a message: ")
 
             if query == "STOP":
-                stop = True
+                self.stop = True
             else:
                 document_id = max_similarity(self.documents, [query])
                 if document_id == None: # if could not find a pair with similarity above 0.8
@@ -75,12 +76,14 @@ class Main(User):
                 if intent == "name":
                     print(response + self.getName() + ".")
                     continue
-                if intent == "greeting" and first_time:
+                if intent == "greeting":
                     print(response)
-                    self.askName()
+                    if first_time:
+                        self.askName()
                     first_time = False
                     continue
                 if intent in ["goodbye"]:
+                    response += f", {self.name}!" if self.name else "!"
                     print(response)
                     break
                 if intent == "options":
@@ -91,36 +94,60 @@ class Main(User):
                     print("Do you have anything else to ask?")
                     continue
                 if intent == "SearchRoute":
+                    print("OK, I see you want me to search for the route!")
+                    self.ORNDSTreset()
                     found = self.extractORNDST(query)
                     self.getORNDST()
                     map, status = self.getStopPoint(intent)
-                    if status == 404:
+                    while status == 404 and not self.stop:         
                         self.ORNDSTreset()
-                        continue
+                        self.getORNDST()
+                        map, status = self.getStopPoint(intent)
+                        stop_msg = input("Do you want to continue? Select a number: 1. Yes, 2. No")
+                        self.stop = True if stop_msg == "2" else False
+                    if self.stop:
+                        print(f"See you again!")
+                        break
                     self.disambiguate(map)
                     self.getRoute()         
                 elif intent == "SearchFare":
+                    print("OK, about the fare...")
                     found = self.extractORNDST(query)
                     if found or not self.isLoaded():
                         self.getORNDST()
                         map, status = self.getStopPoint(intent)
-                        if status == 404:
+                        while status == 404 and not self.stop:
                             self.ORNDSTreset()
-                            continue
+                            self.getORNDST()
+                            map, status = self.getStopPoint(intent)
+                            stop_msg = input("Do you want to continue? Select a number: 1. Yes, 2. No")
+                            self.stop = True if stop_msg == "2" else False
+                        if self.stop:
+                            print(f"See you again!")
+                            break
                         self.disambiguate(map)
                     self.getFare()
-                elif intent == "SearchTime":
-                    pass
                 elif intent == "checkDisruptions":
+                    print("OK, I am checking if there are disruptions on the route.")
+                    if not self.isLoaded():
+                        query = input("But firstly, which station are you going from and to?: ")
                     found = self.extractORNDST(query)
                     if found or not self.isLoaded():
                         self.getORNDST()
                         map, status = self.getStopPoint(intent)
-                        if status == 404:
+                        while status == 404 and not self.stop:
                             self.ORNDSTreset()
-                            continue
+                            self.getORNDST()
+                            map, status = self.getStopPoint(intent)
+                            stop_msg = input("Do you want to continue? Select a number: 1. Yes, 2. No")
+                            self.stop = True if stop_msg == "2" else False
+                        if self.stop:
+                            print(f"See you again!")
+                            break
                         self.disambiguate(map)
                     self.getRouteInfo()
+                elif intent == "SearchTime":
+                    print("Ask about the route and I will tell you how long it takes too!")
                 
                 print("Do you have anything else to ask about the route? If so, type in your question!")
 

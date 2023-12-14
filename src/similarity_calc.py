@@ -1,9 +1,6 @@
-from joblib import dump, load
-from nltk.corpus import stopwords
 from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
 from nltk.stem.snowball import PorterStemmer
 from sklearn.metrics.pairwise import cosine_similarity
-import numpy as np
 from operator import itemgetter
 
 def similarity_calc(key, intent_docs, query):
@@ -27,7 +24,7 @@ def similarity_calc(key, intent_docs, query):
     cosine_similarities = cosine_similarity(queryTFIDF, datasetTFIDF) 
 
     # Similarity threshold
-    threshold = 0.8
+    threshold = 0.6
 
     max_cosine_similarity = cosine_similarities.max()
 
@@ -37,18 +34,16 @@ def max_similarity(documents, query):
     """
     Returns the id of a row with max similarity by calculating max cosine similarity for each intent document
     """
-    # Print the cosine similarities and the index of the most similar document for each document
     max_similarities = []
 
     for key, intent_docs in documents.items():
         max_similarity = similarity_calc(key, intent_docs.values(), query)
         if max_similarity[2]:
             max_similarities.append(max_similarity)
-    
+
     if not max_similarities:
         return None
     
     max_similarity_index = max(max_similarities, key=itemgetter(2))
     return max_similarity_index[0] + str(max_similarity_index[1] + 1) if max_similarity_index else None 
-    
     

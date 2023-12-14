@@ -1,0 +1,19 @@
+question,intent
+how can i go from baker street to bond street?,SearchRoute
+how do i get to baker street?,SearchRoute
+i want to from baker street to bond street,SearchRoute
+i want to go to baker street to bond street,SearchRoute
+when will i reach bond street,SearchTime
+how much does it cost to go to Acton Town from Liverpool Street,SearchFare
+i don't know how to go to vauxhall,SearchRoute
+hello what can you do,options
+i'd like to ask you how to go to bersize park,SearchRoute
+are there delays,checkDisruptions
+How do I get to DST from ORN?,SearchRoute
+Can you tell me the best way to reach DST,SearchRoute
+What's the best route to DST,SearchRoute
+Could you provide directions to DST,SearchRoute
+Do you know the way to DST,SearchRoute
+Which public transportation should I take to reach DST,SearchRoute
+how much is it gonna cost to go to DST,SearchFare
+how much is the fare,SearchFare
